@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Vladimir K. Test</title>
+      <link rel="icon" type="image/x-icon" href="{{ url_for('images', path='favicon.ico') }}">
+      <script src="{{ url_for('static', path='custom.js') }}"></script>
+   </head>
+   <body>
+      <h1>Test</h1>
+      <form action="" onsubmit="sendMessage(event)">
+         <label for="messageText"></label><input type="text" id="messageText" autocomplete="off"/>
+         <button>Send</button>
+      </form>
+      <ul id='messages'>
+      </ul>
+   </body>
+</html>
